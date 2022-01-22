@@ -1,0 +1,26 @@
+main{
+
+}
+
+.home-state,
+.home-date-time{
+    font-family: 'Montserrat';
+    color: #fff;
+    text-align: center;
+}
+
+.home-state{
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.home-date-time{
+    font-size: 1.5rem;
+}
+
+.home-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
