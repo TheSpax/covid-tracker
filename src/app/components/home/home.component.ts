@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { CovidData } from 'src/app/entity/covidData';
 import { CovidDataService } from 'src/app/services/covid-data.service';
+=======
+>>>>>>> 68d8af7d090c8a42ebbe5416bf2d4bd3bbcdccc4
 
 @Component({
   selector: 'app-home',
@@ -9,6 +12,7 @@ import { CovidDataService } from 'src/app/services/covid-data.service';
 })
 export class HomeComponent implements OnInit {
 
+<<<<<<< HEAD
   covidDataObjects: CovidData[] = [];
   errorMessage: any;
 
@@ -25,3 +29,11 @@ export class HomeComponent implements OnInit {
   }
 
 }
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+>>>>>>> 68d8af7d090c8a42ebbe5416bf2d4bd3bbcdccc4

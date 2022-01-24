@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import { Component, Input, OnInit } from '@angular/core';
 import { CovidData } from 'src/app/entity/covidData';
 import { CovidDataService } from 'src/app/services/covid-data.service';
+=======
+import { Component, OnInit } from '@angular/core';
+>>>>>>> 68d8af7d090c8a42ebbe5416bf2d4bd3bbcdccc4
 
 @Component({
   selector: 'app-country-select',
@@ -9,6 +13,7 @@ import { CovidDataService } from 'src/app/services/covid-data.service';
 })
 export class CountrySelectComponent implements OnInit {
 
+<<<<<<< HEAD
   covidDataObjects: CovidData[] = [];
   errorMessage: any;
 
@@ -26,3 +31,11 @@ export class CountrySelectComponent implements OnInit {
   }
 
 }
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+>>>>>>> 68d8af7d090c8a42ebbe5416bf2d4bd3bbcdccc4
