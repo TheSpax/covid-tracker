@@ -10,6 +10,8 @@ export class DataCardComponent implements OnInit {
   @Input() red: boolean = false;
   @Input() green: boolean = false;
   @Input() gray: boolean = false;
+  @Input() cardTitle: string = "";
+  @Input() cardValue: string = "";
 
   constructor() { }
 

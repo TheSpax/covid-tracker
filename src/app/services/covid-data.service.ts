@@ -17,6 +17,11 @@ export class CovidDataService {
     map((data:any) => data.map((dataItem: any) => this.createDataObject(dataItem))));    
   }
 
+  getDataForCountry(country: string): Observable<CovidData>{
+    return this.http.get<CovidData>(this.url + '/' + country).pipe(catchError(this.handleError),
+    map((data: any) => this.createDataObject(data)));
+  }
+
   public handleError(error: HttpErrorResponse) {
     return new Observable((observer: Observer<any>) => {
       observer.error(error);
@@ -28,6 +33,6 @@ export class CovidDataService {
     data["Total Cases_text"], 
     data["Total Recovered_text"], 
     data["Total Deaths_text"], 
-    data["Last Update"]);
+    );
   }
 }

@@ -4,10 +4,10 @@
     </div>
 
     <p>Select country:</p>
-    <select name="" id="">
-        <option style="width: 200px;" *ngFor="let dataObject of covidDataObjects" value="dataObject.country">
+    <select name="select" id="" (change)="sendCountry(select.value)" [formControl]="selectControl" #select>
+        <option style="width: 200px;" *ngFor="let dataObject of covidDataObjects" [value]="dataObject.country">
             {{ dataObject.country }}
         </option>
     </select><br>
-    <button>Reset</button>
+    <button (click)="resetCountry()">Reset</button>
 </div>
